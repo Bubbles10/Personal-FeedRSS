@@ -33,9 +33,8 @@ security:
   - name: Help Net Security
     url: https://www.helpnetsecurity.com/feed/
     max_items: 15
-  # Da testare: spesso rifiuta gli aggregatori.
-  - name: CISA
-    url: https://www.cisa.gov/cybersecurity-advisories/all.xml
+  # CISA (https://www.cisa.gov/cybersecurity-advisories/all.xml) è esclusa:
+  # risponde HTTP 403 anche da GitHub Actions (verificato il 16/10/2026).
 
 privacy:
   - name: Garante Privacy
