@@ -1,0 +1,53 @@
+# Fonti del feed personale. Verificate il 16/10/2026.
+# category: security | privacy
+# max_items (facoltativo): quante voci tenere al massimo da questa fonte per ogni esecuzione.
+# include (facoltativo): tiene solo le voci che contengono almeno una di queste parole (titolo o descrizione).
+
+security:
+  - name: CSIRT Italia
+    url: https://www.acn.gov.it/portale/feedrss/-/journal/rss/20119/723192
+  - name: CERT-AgID
+    url: https://cert-agid.gov.it/feed/
+  - name: CERT-EU
+    url: https://cert.europa.eu/publications/security-advisories-rss
+  - name: CERT/CC
+    url: https://www.kb.cert.org/vuls/atomfeed/
+  - name: MS-ISAC
+    url: https://www.cisecurity.org/feed/advisories
+  - name: cvefeed.io High/Critical
+    url: https://cvefeed.io/rssfeed/severity/high.xml
+    max_items: 30
+  - name: Zero Day Initiative
+    url: https://www.zerodayinitiative.com/rss/published/
+    max_items: 20
+  - name: SANS ISC
+    url: https://isc.sans.edu/rssfeed.xml
+  - name: Red Hot Cyber
+    url: https://www.redhotcyber.com/feed/gn
+  - name: The Hacker News
+    url: https://feeds.feedburner.com/TheHackersNews
+    max_items: 15
+  - name: Security Affairs
+    url: https://securityaffairs.com/feed
+    max_items: 15
+  - name: Help Net Security
+    url: https://www.helpnetsecurity.com/feed/
+    max_items: 15
+  # Da testare: spesso rifiuta gli aggregatori.
+  - name: CISA
+    url: https://www.cisa.gov/cybersecurity-advisories/all.xml
+
+privacy:
+  - name: Garante Privacy
+    url: https://www.garanteprivacy.it/o/gpdp-rss/rss?t=news
+  - name: EDPB
+    url: https://www.edpb.europa.eu/feed/news_en
+  - name: noyb
+    url: https://noyb.eu/en/rss
+  - name: Federprivacy
+    url: https://www.federprivacy.org/informazione/primo-piano?format=feed&type=rss
+  - name: Data Protection Report
+    url: https://www.dataprotectionreport.com/feed/
+  - name: EFF Deeplinks
+    url: https://www.eff.org/rss/updates.xml
+    include: [privacy, surveillance, data, GDPR, tracking, encryption]
